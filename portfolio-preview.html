@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hrishabh Varshney — Performance Marketing Analyst</title>
+<meta name="description" content="Performance Marketing Analyst with 2+ years running full-funnel paid media across Google Ads, Meta Ads, LinkedIn and Snapchat — ROAS optimization, CPL reduction and lead generation for real estate, education, healthcare, ecommerce and D2C clients.">
+<meta name="keywords" content="performance marketing analyst, Google Ads, Meta Ads, ROAS optimization, CPL reduction, paid media, lead generation, Hrishabh Varshney, Hyderabad">
+<meta name="author" content="Hrishabh Varshney">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E1420">
+<link rel="canonical" href="https://hrishabhvarshney.com/">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hrishabh Varshney — Performance Marketing Analyst">
+<meta property="og:description" content="Full-funnel paid media across Google Ads, Meta Ads, LinkedIn and Snapchat — ROAS optimization, CPL reduction and lead generation across real estate, education, healthcare and ecommerce.">
+<meta property="og:url" content="https://hrishabhvarshney.com/">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hrishabh Varshney — Performance Marketing Analyst">
+<meta name="twitter:description" content="Full-funnel paid media across Google Ads, Meta Ads, LinkedIn and Snapchat — ROAS optimization and CPL reduction for real estate, education, healthcare and ecommerce clients.">
+
+<!-- Favicon (HV monogram, no external file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E1420'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%233FB984' text-anchor='middle'%3EHV%3C/text%3E%3C/svg%3E">
+
+<!-- Bootstrap 5 (grid + utilities only — visual system is custom) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Type system -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================================================
+   TOKENS
+=========================================================== */
+:root{
+  --ink:       #0E1420;
+  --ink-2:     #161E2E;
+  --ink-line:  rgba(246,245,241,0.12);
+  --paper:     #F6F5F1;
+  --paper-2:   #ECE9E2;
+  --paper-line:rgba(14,20,32,0.12);
+  --signal:    #3FB984;
+  --amber:     #F2A93B;
+  --slate:     #8A93A6;
+  --white:     #F6F5F1;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; scroll-padding-top: 92px; }
+
+html, body{ overflow-x: hidden; max-width: 100%; }
+
+body{
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  margin:0;
+}
+
+h1,h2,h3{ font-family: var(--font-display); margin:0; }
+
+a{ color: inherit; text-decoration: none; }
+
+::selection{ background: var(--amber); color: var(--ink); }
+
+:focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; }
+
+/* ===========================================================
+   CONSOLE HEADER
+=========================================================== */
+.console{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  border-bottom: 1px solid var(--ink-line);
+}
+
+.console-nav-row{
+  display:flex;
+  align-items:center;
+  gap: 2rem;
+  padding: 0.9rem 1.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.brand{
+  font-family: var(--font-mono);
+  font-weight:600;
+  color: var(--white);
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  flex-shrink:0;
+}
+.brand-blink{
+  color: var(--signal);
+  animation: blink 1.1s steps(1) infinite;
+}
+@keyframes blink{ 50%{ opacity:0; } }
+
+.tabs{
+  display:flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar{ display:none; }
+
+.tab{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+  white-space: nowrap;
+  padding: 0.45rem 0.75rem;
+  border-radius: 4px;
+  transition: color .15s ease, background .15s ease;
+}
+.tab:hover{ color: var(--white); background: rgba(255,255,255,0.05); }
+.tab.active{ color: var(--ink); background: var(--signal); }
+
+.ticker-wrap{
+  overflow: hidden;
+  border-top: 1px solid var(--ink-line);
+  background: var(--ink-2);
+}
+.ticker{
+  display:flex;
+  gap: 3rem;
+  white-space: nowrap;
+  padding: 0.4rem 0;
+  width: max-content;
+  animation: ticker-scroll 28s linear infinite;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--signal);
+  letter-spacing: 0.02em;
+}
+.ticker em{ color: var(--slate); font-style:normal; margin-left:0.15rem; }
+@keyframes ticker-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}
+
+/* ===========================================================
+   HERO
+=========================================================== */
+.hero{
+  background: var(--ink);
+  color: var(--white);
+  padding-bottom: 5rem;
+  overflow:hidden;
+}
+
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--slate);
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.dot-live{
+  width:7px; height:7px; border-radius:50%;
+  background: var(--signal);
+  display:inline-block;
+  box-shadow: 0 0 0 0 rgba(63,185,132,0.6);
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse{
+  0%{ box-shadow: 0 0 0 0 rgba(63,185,132,0.55); }
+  70%{ box-shadow: 0 0 0 8px rgba(63,185,132,0); }
+  100%{ box-shadow: 0 0 0 0 rgba(63,185,132,0); }
+}
+
+.hero-title{
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+}
+.hero-title .hl{ color: var(--signal); }
+
+.hero-sub{
+  font-size: 1.08rem;
+  color: var(--slate);
+  max-width: 46ch;
+  margin-bottom: 2rem;
+}
+
+.hero-cta{ display:flex; gap: 0.9rem; flex-wrap: wrap; }
+
+.btn-console{
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.75rem 1.3rem;
+  border-radius: 6px;
+  border: 1px solid var(--ink-line);
+  color: var(--white);
+  display:inline-flex;
+  align-items:center;
+  gap: 0.4rem;
+  transition: all .15s ease;
+}
+.btn-console:hover{ border-color: var(--white); }
+.btn-console-primary{
+  background: var(--signal);
+  color: var(--ink);
+  border-color: var(--signal);
+  font-weight:600;
+}
+.btn-console-primary:hover{ background: #58caa0; border-color:#58caa0; }
+
+/* status card */
+.status-card{
+  background: var(--ink-2);
+  border: 1px solid var(--ink-line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+}
+.status-card-head{
+  display:flex; justify-content:space-between; align-items:center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--slate);
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--ink-line);
+  margin-bottom: 0.9rem;
+}
+.status-live{
+  color: var(--signal);
+  font-weight:600;
+}
+.metric-list{ list-style:none; margin:0; padding:0; }
+.metric-list li{
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 0.65rem 0;
+  border-bottom: 1px dashed var(--ink-line);
+}
+.metric-list li:last-child{ border-bottom:none; }
+.metric-label{ font-size: 0.85rem; color: var(--slate); }
+.metric-value{
+  font-family: var(--font-mono);
+  font-weight:600;
+  font-size: 1.05rem;
+  display:flex; align-items:center; gap:0.35rem;
+}
+.metric-value .up{ color: var(--signal); font-size: 0.8rem; }
+.metric-value .down{ color: var(--amber); font-size: 0.8rem; }
+.status-card-foot{
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--slate);
+  letter-spacing: 0.02em;
+}
+
+/* ===========================================================
+   SECTIONS — SHARED
+=========================================================== */
+.section{ padding: 5.5rem 0; }
+.section-dark{ background: var(--ink); color: var(--white); }
+
+.section-head{ margin-bottom: 2.75rem; max-width: 60ch; }
+.section-kicker{
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--signal);
+  margin-bottom: 0.6rem;
+}
+.section-dark .section-kicker{ color: var(--signal); }
+.section-title{
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 600;
+}
+.section-sub{
+  margin-top: 0.6rem;
+  color: var(--slate);
+}
+.section:not(.section-dark) .section-sub{ color: #5B6273; }
+.section:not(.section-dark) .section-kicker{ color: #2C8F63; }
+
+/* ===========================================================
+   EXPERIENCE — CAMPAIGN CARDS
+=========================================================== */
+.campaign-card{
+  background: var(--ink-2);
+  border: 1px solid var(--ink-line);
+  border-radius: 12px;
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.campaign-card-top{
+  display:flex; justify-content:space-between; align-items:flex-start;
+  gap: 1rem; flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.campaign-card h3{ font-size: 1.3rem; font-weight:600; margin-bottom:0.2rem; }
+.campaign-meta{ font-family: var(--font-mono); font-size:0.78rem; color: var(--slate); margin:0; }
+
+.pill{
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing:0.05em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 20px;
+  display:inline-flex; align-items:center; gap:0.4rem;
+  white-space: nowrap;
+}
+.pill-live{ background: rgba(63,185,132,0.14); color: var(--signal); }
+.pill-done{ background: rgba(138,147,166,0.14); color: var(--slate); }
+
+.platform-row{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.2rem; }
+.platform-pill{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  border: 1px solid var(--ink-line);
+  color: var(--slate);
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+}
+
+.bullet-list{ margin:0; padding-left: 1.1rem; }
+.bullet-list li{ margin-bottom: 0.6rem; color: #C9CEDA; }
+.bullet-list li:last-child{ margin-bottom:0; }
+strong.metric{ color: var(--amber); font-weight:600; }
+
+/* ===========================================================
+   SKILLS
+=========================================================== */
+.skill-group{
+  background: var(--paper-2);
+  border: 1px solid var(--paper-line);
+  border-radius: 12px;
+  padding: 1.6rem;
+  height:100%;
+}
+.skill-group h3{
+  font-size: 1rem;
+  font-weight:600;
+  display:flex; align-items:center; gap:0.5rem;
+  margin-bottom: 1.1rem;
+}
+.chip-wrap{ display:flex; flex-wrap:wrap; gap:0.5rem; }
+.chip{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--ink);
+  color: var(--white);
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+}
+.chip-mono{ background: transparent; border:1px solid var(--paper-line); color: var(--ink); }
+
+/* also-worked box (sits on a dark section) */
+.also-worked{
+  margin-top: 3rem;
+  border: 1px solid var(--ink-line);
+  border-radius: 12px;
+  padding: 1.6rem;
+  background: var(--ink-2);
+}
+.also-worked .section-kicker{ margin-bottom: 1.1rem; }
+.also-worked .chip{
+  background: transparent;
+  border: 1px solid var(--ink-line);
+  color: #C9CEDA;
+}
+.also-worked .chip:hover{ border-color: var(--signal); color: var(--signal); }
+
+.cert-badge{
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  border: 1px solid var(--paper-line);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  display:inline-flex; align-items:center; gap:0.4rem;
+  color: #2C8F63;
+}
+
+/* ===========================================================
+   CASE STUDIES
+=========================================================== */
+.cs-card{
+  position:relative;
+  height:100%;
+  background: var(--ink-2);
+  border: 1px solid var(--ink-line);
+  border-radius: 12px;
+  padding: 1.6rem;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.cs-card:hover{ border-color: var(--signal); transform: translateY(-3px); }
+.cs-draft{ border-style: dashed; }
+.cs-draft:hover{ border-color: var(--ink-line); transform:none; }
+.cs-ribbon{
+  position:absolute; top: -1px; right: 1.2rem;
+  background: var(--amber);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight:700;
+  letter-spacing:0.05em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0 0 6px 6px;
+}
+.cs-field{ margin: 0 0 0.9rem; font-size: 0.9rem; color:#C9CEDA; }
+.cs-field span{
+  display:block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing:0.06em;
+  color: var(--slate);
+  margin-bottom: 0.2rem;
+}
+.cs-result{
+  border-top: 1px solid var(--ink-line);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display:flex; align-items:baseline; gap:0.5rem;
+}
+.cs-result-num{ font-family: var(--font-display); font-size: 1.6rem; font-weight:700; color: var(--slate); }
+.cs-result-label{ font-family: var(--font-mono); font-size: 0.72rem; color: var(--slate); }
+
+/* ===========================================================
+   PROJECTS
+=========================================================== */
+.project-card{
+  background: var(--paper-2);
+  border: 1px solid var(--paper-line);
+  border-radius: 12px;
+  padding: 1.6rem;
+  height:100%;
+}
+.project-card h3{ font-size: 1.1rem; font-weight:600; margin-bottom:0.6rem; }
+.project-card p{ color:#4A5062; font-size:0.92rem; margin-bottom:1.1rem; }
+
+/* ===========================================================
+   EDUCATION
+=========================================================== */
+.edu-line{ border-left: 1px solid var(--ink-line); padding-left: 1.8rem; }
+.edu-item{
+  position:relative;
+  padding-bottom: 1.8rem;
+  display:flex; flex-wrap:wrap; gap: 0.3rem 1.2rem;
+}
+.edu-item:last-child{ padding-bottom:0; }
+.edu-item::before{
+  content:'';
+  position:absolute; left:-1.86rem; top:0.35rem;
+  width:9px; height:9px; border-radius:50%;
+  background: var(--signal);
+}
+.edu-year{ font-family: var(--font-mono); font-size:0.78rem; color: var(--signal); min-width: 7rem; }
+.edu-body{ color:#C9CEDA; font-size:0.92rem; }
+.edu-body em{ color: var(--slate); font-style:normal; }
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+.footer{
+  background: var(--ink);
+  color: var(--white);
+  padding: 5rem 0 2.5rem;
+  border-top: 1px solid var(--ink-line);
+}
+.footer-title{
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight:600;
+  margin: 0.5rem 0 0.8rem;
+}
+.footer-sub{ color: var(--slate); max-width: 48ch; margin-bottom: 2rem; }
+.footer-links{ display:flex; flex-wrap:wrap; gap: 1rem; margin-bottom: 3rem; }
+.footer-links a{
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  border: 1px solid var(--ink-line);
+  border-radius: 8px;
+  padding: 0.7rem 1.1rem;
+  display:inline-flex; align-items:center; gap:0.5rem;
+  transition: border-color .15s ease, color .15s ease;
+}
+.footer-links a:hover{ border-color: var(--signal); color: var(--signal); }
+.footer-copy{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--slate);
+  border-top: 1px solid var(--ink-line);
+  padding-top: 1.5rem;
+}
+
+/* ===========================================================
+   REVEAL ANIMATION
+=========================================================== */
+[data-reveal]{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+[data-reveal].in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  .ticker{ animation: none; }
+  .dot-live{ animation: none; }
+  [data-reveal]{ opacity:1; transform:none; transition:none; }
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+@media (max-width: 991px){
+  .status-card{ margin-top: 1rem; }
+}
+
+@media (max-width: 767px){
+  .console-nav-row{ gap: 0.75rem; padding: 0.8rem 1rem; }
+  .brand{ font-size: 0.95rem; }
+  .tab{ font-size: 0.68rem; padding: 0.4rem 0.6rem; }
+  .ticker{ font-size: 0.66rem; gap: 2rem; }
+  .campaign-card{ padding: 1.25rem; }
+  .campaign-card h3{ font-size: 1.1rem; }
+  .section{ padding: 3.5rem 0; }
+  .section-head{ margin-bottom: 2rem; }
+  .status-card{ padding: 1.25rem; }
+  .metric-label{ font-size: 0.78rem; }
+  .metric-value{ font-size: 0.95rem; }
+  .cs-card{ padding: 1.3rem; }
+  .cs-result-num{ font-size: 1.35rem; }
+  .footer{ padding: 3.5rem 0 2rem; }
+  .footer-links{ flex-direction: column; }
+  .footer-links a{ justify-content: flex-start; }
+  .edu-line{ padding-left: 1.4rem; }
+  .edu-item::before{ left: -1.46rem; }
+}
+
+@media (max-width: 420px){
+  .hero-cta{ flex-direction: column; align-items: stretch; }
+  .btn-console{ justify-content: center; }
+  .also-worked{ padding: 1.25rem; }
+}
+
+</style>
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hrishabh Varshney",
+  "jobTitle": "Performance Marketing Analyst",
+  "email": "mailto:rishi024in@gmail.com",
+  "telephone": "+91-82797-09553",
+  "url": "https://hrishabhvarshney.com/",
+  "sameAs": ["https://linkedin.com/in/rishi240"],
+  "worksFor": { "@type": "Organization", "name": "GenY Medium" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" }
+}
+</script>
+</head>
+<body>
+
+<!-- ============ LIVE CAMPAIGN CONSOLE (fixed top bar) ============ -->
+<header class="console" id="top">
+  <div class="console-nav-row">
+    <a href="#top" class="brand">HV<span class="brand-blink">_</span></a>
+    <nav class="tabs" id="tabs" aria-label="Primary">
+      <a href="#overview" class="tab active" data-tab>01 · Overview</a>
+      <a href="#experience" class="tab" data-tab>02 · Experience</a>
+      <a href="#skills" class="tab" data-tab>03 · Skills</a>
+      <a href="#case-studies" class="tab" data-tab>04 · Case Studies</a>
+      <a href="#projects" class="tab" data-tab>05 · Projects</a>
+      <a href="#education" class="tab" data-tab>06 · Education</a>
+      <a href="#contact" class="tab" data-tab>07 · Contact</a>
+    </nav>
+  </div>
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker" id="ticker">
+      <span>6X ROAS <em>· EDUCATION</em></span>
+      <span>80+ LEADS/MO <em>· REAL ESTATE</em></span>
+      <span>CPL −20% <em>· CROSS-CLIENT</em></span>
+      <span>₹20L+ MONTHLY SPEND <em>· MANAGED</em></span>
+      <span>3X+ ROAS <em>· PERSONAL CARE</em></span>
+      <span>CVR +20–25% <em>· FUNNEL OPT.</em></span>
+      <span>1.5X+ ROAS <em>· HEALTH SUPPLEMENTS</em></span>
+      <span>REPORTING EFFORT −40% <em>· AUTOMATION</em></span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 01 OVERVIEW / HERO ============ -->
+<section id="overview" class="hero">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row align-items-center gy-5 pt-5">
+      <div class="col-lg-7">
+        <p class="eyebrow" data-reveal>STATUS: ACTIVELY OPTIMIZING <span class="dot-live"></span></p>
+        <h1 class="hero-title" data-reveal>
+          I turn ad spend<br> into a <span class="hl">predictable pipeline.</span>
+        </h1>
+        <p class="hero-sub" data-reveal>
+          Performance Marketing Analyst with 2 years running full-funnel paid media across
+          Google Ads, Meta Ads, LinkedIn Campaign Manager and Snapchat Ads — for clients in
+          healthcare, education, real estate, automotive, ecommerce and commercial sectors.
+        </p>
+        <div class="hero-cta" data-reveal>
+          <a href="#case-studies" class="btn-console btn-console-primary">View case studies <i class="bi bi-arrow-down-right"></i></a>
+          <a href="#contact" class="btn-console">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="status-card" data-reveal>
+          <div class="status-card-head">
+            <span>CAMPAIGN STATUS</span>
+            <span class="status-live">LIVE</span>
+          </div>
+          <ul class="metric-list">
+            <li>
+              <span class="metric-label">ROAS · Education clients</span>
+              <span class="metric-value"><span class="count" data-target="6" data-suffix="X">0X</span> <i class="bi bi-graph-up-arrow up"></i></span>
+            </li>
+            <li>
+              <span class="metric-label">Cost per lead</span>
+              <span class="metric-value">−<span class="count" data-target="20" data-suffix="%">0%</span> <i class="bi bi-graph-down-arrow down"></i></span>
+            </li>
+            <li>
+              <span class="metric-label">Leads/month · Real estate</span>
+              <span class="metric-value"><span class="count" data-target="80" data-suffix="+">0+</span> <i class="bi bi-graph-up-arrow up"></i></span>
+            </li>
+            <li>
+              <span class="metric-label">Monthly spend managed</span>
+              <span class="metric-value">₹<span class="count" data-target="20" data-suffix="L+">0L+</span></span>
+            </li>
+          </ul>
+          <div class="status-card-foot">Water park seasonal campaign · peak-season pacing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 EXPERIENCE ============ -->
+<section id="experience" class="section section-dark">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">02 · FLIGHT LOG</p>
+      <h2 class="section-title">Campaign history</h2>
+    </div>
+
+    <!-- Campaign row 1 -->
+    <article class="campaign-card" data-reveal>
+      <div class="campaign-card-top">
+        <div>
+          <h3>Performance Marketing Analyst</h3>
+          <p class="campaign-meta">GenY Medium, Hyderabad · Oct 2024 – Present</p>
+        </div>
+        <span class="pill pill-live"><span class="dot-live"></span> ACTIVE</span>
+      </div>
+      <div class="platform-row">
+        <span class="platform-pill">Google Ads</span>
+        <span class="platform-pill">Meta Ads</span>
+        <span class="platform-pill">LinkedIn Campaign Manager</span>
+        <span class="platform-pill">Snapchat Ads</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Planned and executed full-funnel paid media campaigns spanning awareness, consideration and conversion stages.</li>
+        <li>Generated <strong class="metric">80+ qualified leads/month</strong> for a real estate client through continuous targeting, creative and bidding optimization.</li>
+        <li>Delivered <strong class="metric">6X ROAS</strong> for education clients through funnel improvements and performance optimization.</li>
+        <li>Drove <strong class="metric">1.5X+ ROAS</strong> for an ecommerce client's cancer supplements category via targeted audience strategy.</li>
+        <li>Achieved <strong class="metric">3X+ ROAS</strong> on women's personal care products through creative testing and bid optimization.</li>
+        <li>Reduced <strong class="metric">CPL by 20%</strong> through structured A/B testing of creatives, audiences, landing pages and bidding.</li>
+        <li>Managed <strong class="metric">₹20L+ monthly ad spend</strong> for a seasonal water park campaign, optimizing for bookings and peak-season performance.</li>
+        <li>Improved <strong class="metric">conversion rates by 20–25%</strong> through audience segmentation and funnel optimization.</li>
+        <li>Built automated reporting dashboards in Excel/Sheets, cutting manual reporting effort by <strong class="metric">40%</strong>.</li>
+        <li>Owned end-to-end operations: UTM tracking, conversion tracking, naming conventions and budget pacing.</li>
+      </ul>
+    </article>
+
+    <!-- Campaign row 2 -->
+    <article class="campaign-card" data-reveal>
+      <div class="campaign-card-top">
+        <div>
+          <h3>Digital Marketing &amp; Web Intern</h3>
+          <p class="campaign-meta">GenY Medium, Hyderabad · Jul 2024 – Oct 2024</p>
+        </div>
+        <span class="pill pill-done">COMPLETED</span>
+      </div>
+      <div class="platform-row">
+        <span class="platform-pill">Google Ads</span>
+        <span class="platform-pill">Meta Ads</span>
+        <span class="platform-pill">SEO</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Assisted execution, monitoring and optimization of paid media campaigns across Google Ads and Meta Ads.</li>
+        <li>Supported landing page updates and on-page optimizations to improve conversion performance.</li>
+        <li>Collaborated with marketing and development teams on SEO strategy and tracking best practices.</li>
+        <li>Built hands-on fluency with paid media platforms, reporting workflows and performance analysis.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 03 SKILLS ============ -->
+<section id="skills" class="section">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">03 · TARGETING PARAMETERS</p>
+      <h2 class="section-title">Skills &amp; tooling</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4" data-reveal>
+        <div class="skill-group">
+          <h3><i class="bi bi-bullseye"></i> Performance Marketing</h3>
+          <div class="chip-wrap">
+            <span class="chip">Google Ads</span><span class="chip">Meta Ads</span><span class="chip">LinkedIn Ads</span>
+            <span class="chip">Snapchat Ads</span><span class="chip">Lead Generation</span><span class="chip">CRO</span>
+            <span class="chip">A/B Testing</span><span class="chip">Funnel Optimization</span><span class="chip">Remarketing</span>
+            <span class="chip">Audience Segmentation</span><span class="chip">ROAS Optimization</span><span class="chip">CPL Reduction</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="skill-group">
+          <h3><i class="bi bi-bar-chart-line"></i> Analytics &amp; Reporting</h3>
+          <div class="chip-wrap">
+            <span class="chip">GA4</span><span class="chip">Excel Dashboards</span><span class="chip">Sheets Automation</span>
+            <span class="chip">KPI Analysis</span><span class="chip">UTM Tracking</span><span class="chip">Conversion Tracking</span>
+            <span class="chip">Budget Pacing</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="skill-group">
+          <h3><i class="bi bi-code-slash"></i> Web &amp; Technical</h3>
+          <div class="chip-wrap">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            <span class="chip">Bootstrap</span><span class="chip">PHP</span><span class="chip">WordPress</span>
+            <span class="chip">SEO</span><span class="chip">Git &amp; GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-row" data-reveal>
+      <p class="section-kicker" style="margin-top:3rem;">VERIFIED</p>
+      <div class="d-flex flex-wrap gap-3 mt-3">
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Google Ads — Search, Display, Video, Shopping, Measurement</span>
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Meta Ads — Media Buying / Digital Marketing Associate</span>
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Google Analytics — Basic &amp; Advanced</span>
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> SQL — HackerRank</span>
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Responsive Web Development — Udemy</span>
+        <span class="cert-badge"><i class="bi bi-patch-check-fill"></i> Python for Data Science &amp; ML — Udemy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 CASE STUDIES ============ -->
+<section id="case-studies" class="section section-dark">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">04 · DEEP DIVES</p>
+      <h2 class="section-title">Case studies</h2>
+      <p class="section-sub">Client, challenge, approach and the number that moved.</p>
+    </div>
+
+    <!--
+      ============================================================
+      CASE STUDY GRID
+      To add another one later: duplicate a <div class="col-md-6 col-lg-4"> ...
+      </div> block below and fill in CLIENT / INDUSTRY / CHALLENGE / APPROACH.
+      Add class "cs-draft" plus a <span class="cs-ribbon">DRAFT</span> if it
+      isn't ready to publish yet.
+      ============================================================
+    -->
+    <div class="row g-4" id="case-study-grid">
+
+      <!-- CASE STUDY CARD — Wild Waters -->
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cs-card">
+          <p class="cs-field"><span>CLIENT</span>Wild Waters</p>
+          <p class="cs-field"><span>INDUSTRY</span>Leisure &amp; Entertainment</p>
+          <p class="cs-field"><span>CHALLENGE</span>Ticket sales ran through direct purchases on their own website, but a broken landing page and gaps in conversion tracking were quietly capping how many visits turned into bookings.</p>
+          <p class="cs-field"><span>APPROACH</span>Fixed the landing page experience and rebuilt tracking so every purchase was properly attributed. Ran a Monsoon flash sale that pushed ROAS past 5X, then introduced Google Ads for the client for the first time &mdash; leading with Performance Max to open up a channel they'd never explored &mdash; while also shaping the creative direction behind the seasonal offers.</p>
+          <div class="cs-result">
+            <span class="cs-result-num">6X</span>
+            <span class="cs-result-label">ROAS on Google Performance Max &middot; 5X+ on the Monsoon flash sale</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY CARD — Avinash College of Commerce -->
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cs-card">
+          <p class="cs-field"><span>CLIENT</span>Avinash College of Commerce</p>
+          <p class="cs-field"><span>INDUSTRY</span>Education</p>
+          <p class="cs-field"><span>CHALLENGE</span>Admission campaigns were already performing well, but cost per enrollment still had real room to improve &mdash; the brief was bringing acquisition cost down year-on-year without losing lead quality or enrollment volume.</p>
+          <p class="cs-field"><span>APPROACH</span>Reviewed performance patterns from prior academic years to find where the funnel could tighten. Strengthened high-intent audience clusters, improved ad-to-landing-page continuity, and ran structured tests across messaging, formats and bid strategy &mdash; consolidating budget into the channels that stayed efficient and phasing out the ones that didn't.</p>
+          <div class="cs-result">
+            <span class="cs-result-num">37%</span>
+            <span class="cs-result-label">Lower cost per enrollment, year-on-year (2024&rarr;2025)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY CARD — Everhope Oncology -->
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cs-card">
+          <p class="cs-field"><span>CLIENT</span>Everhope Oncology</p>
+          <p class="cs-field"><span>INDUSTRY</span>Healthcare</p>
+          <p class="cs-field"><span>CHALLENGE</span>As a specialty oncology brand competing against large institutions like AIIMS and RGCRI, Everhope needed a stronger digital presence and a lower cost of acquiring OPD visits.</p>
+          <p class="cs-field"><span>APPROACH</span>Ran Search and Performance Max to capture high-intent demand, with Meta and LinkedIn layered in for different audience segments. Matched landing pages, testimonials and specialty content to each campaign type so the message fit the intent behind the click.</p>
+          <div class="cs-result">
+            <span class="cs-result-num">80%</span>
+            <span class="cs-result-label">More new OPDs/month &middot; 64% fewer junk leads, 37% lower cost per OPD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY CARD — Kaapi Machines -->
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cs-card">
+          <p class="cs-field"><span>CLIENT</span>Kaapi Machines</p>
+          <p class="cs-field"><span>INDUSTRY</span>Commercial Equipment</p>
+          <p class="cs-field"><span>CHALLENGE</span>Lead quality was subpar, target impression share was thin, and a chunk of keywords sat inactive with no spend behind them at all.</p>
+          <p class="cs-field"><span>APPROACH</span>Cut budget on low-quality lead sources and shifted spend to the segments that performed, merging fragmented campaigns for cleaner tracking. Launched a dedicated campaign to build impression share and targeted competitor brand keywords to capture high-intent traffic. Rebuilt the inactive keywords into their own campaigns so they started contributing to the conversion flow.</p>
+          <div class="cs-result">
+            <span class="cs-result-num">~17X</span>
+            <span class="cs-result-label">ROAS &middot; near-absolute top-of-page share</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASE STUDY CARD — MSN Realty -->
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cs-card">
+          <p class="cs-field"><span>CLIENT</span>MSN Realty</p>
+          <p class="cs-field"><span>INDUSTRY</span>Real Estate</p>
+          <p class="cs-field"><span>CHALLENGE</span>Despite consistent ad spend, the account struggled with lead quality and high-intent site visits &mdash; unoptimized targeting and structure kept CPLs high and lead-to-visit conversion low.</p>
+          <p class="cs-field"><span>APPROACH</span>Consolidated fragmented campaigns, reallocated budget to the ad groups that were actually working, and paused the ones that weren't. Shifted targeting toward bottom-funnel, high-intent keywords with remarketing and in-market audiences, and sharpened ad messaging to match the premium positioning. Optimized the landing page and lead validation flow, then fed sales feedback back into targeting.</p>
+          <div class="cs-result">
+            <span class="cs-result-num">8.5X</span>
+            <span class="cs-result-label">ROI on premium residences</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ALSO WORKED WITH box -->
+    <div class="also-worked" data-reveal>
+      <p class="section-kicker">ALSO WORKED WITH</p>
+      <div class="chip-wrap">
+        <span class="chip">Omsree</span>
+        <span class="chip">Lansum</span>
+        <span class="chip">Jayabheri</span>
+        <span class="chip">GHR</span>
+        <span class="chip">HealthStore</span>
+        <span class="chip">Outback Fryer</span>
+        <span class="chip">CRI</span>
+        <span class="chip">Bajaj Dealers</span>
+        <span class="chip">Monin</span>
+        <span class="chip">Alaknanda Villaggio</span>
+        <span class="chip">Medinova Hospital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">05 · BUILDS</p>
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4" data-reveal>
+        <div class="project-card">
+          <h3>Ador Website</h3>
+          <p>Fully responsive website built for a live client, applying modern UI/UX practice and interactive animation to lift engagement.</p>
+          <div class="chip-wrap">
+            <span class="chip chip-mono">HTML</span><span class="chip chip-mono">CSS</span><span class="chip chip-mono">JS</span>
+            <span class="chip chip-mono">Bootstrap</span><span class="chip chip-mono">PHP</span><span class="chip chip-mono">WordPress</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="project-card">
+          <h3>Help with Assignment Platform</h3>
+          <p>Education-focused platform for assignment submissions and expert guidance; sped up the site and simplified navigation to improve retention.</p>
+          <div class="chip-wrap">
+            <span class="chip chip-mono">HTML</span><span class="chip chip-mono">CSS</span><span class="chip chip-mono">JS</span>
+            <span class="chip chip-mono">Bootstrap</span><span class="chip chip-mono">PHP</span><span class="chip chip-mono">WordPress</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="project-card">
+          <h3>Recipe Finder Web App</h3>
+          <p>Recipe search app integrating the MealDB API for real-time retrieval, wrapped in a clean, user-friendly interface.</p>
+          <div class="chip-wrap">
+            <span class="chip chip-mono">HTML</span><span class="chip chip-mono">CSS</span><span class="chip chip-mono">JS</span><span class="chip chip-mono">API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 EDUCATION ============ -->
+<section id="education" class="section section-dark">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">06 · RECORD</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="edu-line" data-reveal>
+      <div class="edu-item">
+        <span class="edu-year">2020 – 2024</span>
+        <span class="edu-body"><strong>B.Tech, Information Technology</strong> — College of Technology, Pantnagar <em>· CGPA 7.5</em></span>
+      </div>
+      <div class="edu-item">
+        <span class="edu-year">2018 – 2019</span>
+        <span class="edu-body"><strong>Intermediate, Class XII</strong> — S.J.S. Public School, Kasganj <em>· CGPA 8.06</em></span>
+      </div>
+      <div class="edu-item">
+        <span class="edu-year">2016 – 2017</span>
+        <span class="edu-body"><strong>High School, Class X</strong> — R.K. Public School, Ujhani <em>· CGPA 10</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 07 CONTACT / FOOTER ============ -->
+<footer id="contact" class="footer">
+  <div class="container-fluid px-4 px-lg-5">
+    <p class="section-kicker">07 · GET IN TOUCH</p>
+    <h2 class="footer-title">Let's talk performance.</h2>
+    <p class="footer-sub">Have a budget that isn't converting the way it should? That's the conversation I want to have.</p>
+    <div class="footer-links">
+      <a href="mailto:rishi024in@gmail.com"><i class="bi bi-envelope"></i> rishi024in@gmail.com</a>
+      <a href="tel:+918279709553"><i class="bi bi-telephone"></i> +91 82797 09553</a>
+      <a href="https://linkedin.com/in/rishi240" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> linkedin.com/in/rishi240</a>
+    </div>
+    <p class="footer-copy">© 2026 Hrishabh Varshney. Built with HTML, CSS, JS &amp; Bootstrap.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- 1. Duplicate ticker content for a seamless infinite loop ---- */
+  const ticker = document.getElementById('ticker');
+  if (ticker) {
+    ticker.innerHTML += ticker.innerHTML;
+  }
+
+  /* ---- 2. Scroll reveal ---- */
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach((el) => revealObserver.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('in-view'));
+  }
+
+  /* ---- 3. Count-up metrics ---- */
+  const counters = document.querySelectorAll('.count');
+  const animateCount = (el) => {
+    const target = parseFloat(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    if (reduceMotion || !target) {
+      el.textContent = target + suffix;
+      return;
+    }
+    const duration = 1200;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = Math.round(target * eased);
+      el.textContent = value + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  if ('IntersectionObserver' in window) {
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((el) => countObserver.observe(el));
+  } else {
+    counters.forEach(animateCount);
+  }
+
+  /* ---- 4. Active tab highlighting on scroll ---- */
+  const tabs = document.querySelectorAll('[data-tab]');
+  const sections = Array.from(tabs).map((tab) => document.querySelector(tab.getAttribute('href')));
+
+  const setActiveTab = () => {
+    const scrollPos = window.scrollY + 140;
+    let activeIndex = 0;
+    sections.forEach((section, i) => {
+      if (section && section.offsetTop <= scrollPos) activeIndex = i;
+    });
+    tabs.forEach((tab, i) => {
+      const isActive = i === activeIndex;
+      tab.classList.toggle('active', isActive);
+      if (isActive) tab.setAttribute('aria-current', 'true');
+      else tab.removeAttribute('aria-current');
+    });
+  };
+
+  window.addEventListener('scroll', setActiveTab, { passive: true });
+  setActiveTab();
+});
+
+</script>
+</body>
+</html>
